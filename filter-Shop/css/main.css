@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Fira Sans Condensed" sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(226, 206, 214);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 375px;
+  height: 600px;
+  background: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container form {
+  width: 100%;
+  border: 1px solid rgb(112, 81, 237);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+.container form i {
+  padding-left: 10px;
+}
+
+.product-list {
+  padding: 15px 5px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+.product img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.product .product-info {
+  padding-left: 15px;
+}
+.product .product-info .title {
+  font-size: 20px;
+  color: #1d1d1d;
+  font-weight: bold;
+}
+.product .product-info .price {
+  font-size: 18px;
+  font-weight: bold;
+}
